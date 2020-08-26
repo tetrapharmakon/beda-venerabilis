@@ -1,7 +1,7 @@
 \documentclass[danish,a4paper,11pt]{scrartcl}
 \usepackage{graphicx}
 \newcommand{\JustifiedLine}[2][1]{\resizebox{#1\linewidth}{!}{#2}} 
-\usepackage[left=3cm,right=3cm]{geometry}
+\usepackage[left=4cm,right=4cm]{geometry}
 \usepackage{fontspec}
 \setmainfont[ Ligatures={TeX, Rare}
             , BoldFont={MinionPro-BoldSubh}
@@ -12,22 +12,60 @@
 \input Eileen.fd
 \newcommand*\initfamily{\usefont{U}{Eileen}{xl}{n}}
 
-\def\spac#1{{\addfontfeature{LetterSpace=40.0}#1}}
+\newcommand{\spac}[2][40]{{\addfontfeature{LetterSpace=#1}#2}}
 \usepackage{lettrine}
+
+\newcommand{\fsize}[2]{{\fontsize{#1}{#1}\selectfont #2}}
+
 \begin{document}
 \begin{center}
-\JustifiedLine{\spac{BEDÆ ANGLO-}} \\[3mm]
-\JustifiedLine[.75]{\textsc{\spac{saxonis de natvura}}}\\[3mm]
-\JustifiedLine[.45]{\textsc{\spac{rervm liber}.}}\\[5mm]
-\JustifiedLine[.4]{\textsc{\spac{argvmentvm}}}\\[7.5mm]
+	\JustifiedLine{\spac{\bfseries BEDÆ ANGLO-}} \\[3mm]
+	\JustifiedLine[.75]{\textsc{\spac{\bfseries saxonis de natvura}}}\\[3mm]
+	\JustifiedLine[.45]{\textsc{\spac{\bfseries rervm liber}.}}\\[5mm]
+	\JustifiedLine[.4]{\textsc{\spac{argvmentvm}}}\\[3mm]
+	\emph{Naturas rerum uarias, labentis \& æui,}\\
+	\emph{Perstrinxi titulis tempora lata citis.}\\[5mm]
+\end{center}%
+%
+%
+%
+%
+\begin{center}
+	\fsize{16}{\textsc{\spac[20]{de qvadrifario opere dei}.}}\\
+	\fsize{16}{\textsc{\spac[20]{capvt primvm}.}}\\
 \end{center}
 \lettrine[lines=4]{\normalfont\initfamily
-\fontsize{18mm}{18mm}\selectfont T}{ his} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices, ante aliquet sollicitudin aliquet, nibh felis volutpat odio, et lobortis tortor tellus ac urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec molestie nisi in dolor consectetur aliquam. Maecenas non dictum eros. Donec placerat massa et leo malesuada commodo. Vivamus efficitur suscipit tortor, a fermentum odio venenatis vel. Phasellus molestie velit maximus tincidunt rutrum. Aenean sit amet ex iaculis justo pharetra posuere a ac dui. Duis porttitor sapien id sem convallis lacinia. Mauris ipsum ex, egestas nec tincidunt a, sollicitudin eu mauris.
+	\fontsize{18mm}{18mm}\selectfont O}{ \kern.25em\spac[25]{peratio}} diuina, quæ ſecula creauit \& gubernat, quadriformi ratione diſtinguitur. Primo, quod hæc in uerbi dei diſpenſatione non facta, ſed æterna ſunt : qui nos, Apoſtolo teſte, ante tempora ſecularia prædeſtinauit in regnum. Secundo, quod in materia informi pariter elementa mundi facta ſint, ubi qui uiuit in æternum, creauit omnia ſimul. Tertio, quod eadem materies, ſecundum cauſas ſimul creatas, non iam ſimul, ſed diſtinctione ſex primorum dierum in c{\oe}leſtem, terreſtremque creaturam formatur. Quarto, quod ex eiuſdem creaturæ feminibus, \& primordialibus cauſis totius ſeculi tempus naturali curſu preagitur,
+ubi pater uſque nunc operatur \& filius, ubi etiamo coruos paſcit, \& lilia ueſtit deus.
 
-Curabitur vel lacinia risus. Donec sem quam, pretium at augue sed, fermentum interdum nibh. Quisque viverra enim vitae dui venenatis auctor. Pellentesque elementum eros sit amet sapien fermentum mattis. Nunc accumsan, massa ut fringilla euismod, quam enim faucibus metus, sit amet mattis sapien tortor at elit. Donec ut tortor eget magna dapibus fringilla. Vestibulum faucibus elit faucibus, pulvinar arcu sit amet, iaculis est.
-
-Nullam euismod quam felis. Vestibulum sodales, nunc vitae condimentum commodo, leo mi congue eros, quis rutrum ex turpis non elit. Ut pulvinar ultricies erat, at faucibus mauris fringilla fringilla. Sed finibus risus nec ultrices consequat. Nulla elementum lobortis auctor. Nulla euismod dapibus quam, sit amet ullamcorper sapien sollicitudin sit amet. Pellentesque metus nisl, molestie et mattis ac, rhoncus nec magna.
-
-\emph{et \&}
-
+\begin{center}
+	\begin{minipage}{.725\textwidth}
+		\noindent\fsize{16}{\textsc{\spac[20]{de mvndi formatione}. \hspace{\fill} \spac[20]{cap}. \spac[20]{ii}}}
+	\end{minipage}
+\end{center}
+\lettrine{I}{ n} ipſo quidem principio conditionis facta ſunt c{\oe}lum, terra, angeli, a\"er \& aqua de nihilo. Die autem primo lux facta eſt, \& ipſa de nihilo. Secundo, firmamentum in medio aquarum. tertio, ſpecies maris \& terræ, cum eis quæ terræ radicitus inhærent. Quarto, luminaria c{\oe}li de lumine primo die facto. Quinto natatilia \& uolatilia de aquis. Sexto reliqua animalia de terra, \& homo : carne quidem de terra, anima uero de nihilo creatus : qui in Paradiſo, quam dominus a principio plantauerat, coſtituitur.
+\marginpar{\footnotesize\emph{Requies dei\\ septimo die.}}
+Septimo dominus requieuit, non a creaturæ gubernatione, cum in ipſo uiuamus, moueamur, \& ſimus, ſed a nouæ ſubſtantiæ creatione.
+%
+%
+%
+%
+\begin{center}
+	\begin{minipage}{.725\textwidth}
+		\noindent\fsize{16}{\textsc{\spac[20]{qvid sit mvndvs}. \hspace{\fill} \spac[20]{cap}. \spac[20]{iii}}}
+	\end{minipage}
+\end{center}
+\lettrine{M}{vndus} eſt uniuerſitas omnis, quæ conſtat ex c{\oe}lo \& terra, quatuor elementis in ſpeciem orbis abſoluti globata : Igne, quo ſydera lucent: a\"ere, quo cuncta uiuentia ſpirant : quis, quæ terra cingendo, \& penetrando communiunt : atque ipſa terra, quæ mundi media atque ima, librata uolubili circa eam uniuersitate pendet immobilis. Verum Mundi nomine etiam c{\oe}lum a perfecta abſolutaque elegantia uocat :
+\marginpar{\footnotesize\emph{Mvndvs ab\\elegantia.}}
+Nam \& apud Græcos ab ornatu \emph{κ\'{o}σμoς} appellatur.
+%
+%
+%
+%
+%
+\begin{center}
+	\begin{minipage}{.725\textwidth}
+		\noindent\fsize{16}{\textsc{\spac[20]{de elementis}. \hspace{\fill} \spac[20]{cap}. \spac[20]{iiii}}}
+	\end{minipage}
+\end{center}
 \end{document}
