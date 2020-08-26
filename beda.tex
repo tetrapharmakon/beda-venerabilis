@@ -1,0 +1,33 @@
+\documentclass[danish,a4paper,11pt]{scrartcl}
+\usepackage{graphicx}
+\newcommand{\JustifiedLine}[2][1]{\resizebox{#1\linewidth}{!}{#2}} 
+\usepackage[left=3cm,right=3cm]{geometry}
+\usepackage{fontspec}
+\setmainfont[ Ligatures={TeX, Rare}
+            , BoldFont={MinionPro-BoldSubh}
+            ]{Minion Pro}
+\pagestyle{empty}
+
+\usepackage{fontspec}
+\input Eileen.fd
+\newcommand*\initfamily{\usefont{U}{Eileen}{xl}{n}}
+
+\def\spac#1{{\addfontfeature{LetterSpace=40.0}#1}}
+\usepackage{lettrine}
+\begin{document}
+\begin{center}
+\JustifiedLine{\spac{BEDÆ ANGLO-}} \\[3mm]
+\JustifiedLine[.75]{\textsc{\spac{saxonis de natvura}}}\\[3mm]
+\JustifiedLine[.45]{\textsc{\spac{rervm liber}.}}\\[5mm]
+\JustifiedLine[.4]{\textsc{\spac{argvmentvm}}}\\[7.5mm]
+\end{center}
+\lettrine[lines=4]{\normalfont\initfamily
+\fontsize{18mm}{18mm}\selectfont T}{ his} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices, ante aliquet sollicitudin aliquet, nibh felis volutpat odio, et lobortis tortor tellus ac urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec molestie nisi in dolor consectetur aliquam. Maecenas non dictum eros. Donec placerat massa et leo malesuada commodo. Vivamus efficitur suscipit tortor, a fermentum odio venenatis vel. Phasellus molestie velit maximus tincidunt rutrum. Aenean sit amet ex iaculis justo pharetra posuere a ac dui. Duis porttitor sapien id sem convallis lacinia. Mauris ipsum ex, egestas nec tincidunt a, sollicitudin eu mauris.
+
+Curabitur vel lacinia risus. Donec sem quam, pretium at augue sed, fermentum interdum nibh. Quisque viverra enim vitae dui venenatis auctor. Pellentesque elementum eros sit amet sapien fermentum mattis. Nunc accumsan, massa ut fringilla euismod, quam enim faucibus metus, sit amet mattis sapien tortor at elit. Donec ut tortor eget magna dapibus fringilla. Vestibulum faucibus elit faucibus, pulvinar arcu sit amet, iaculis est.
+
+Nullam euismod quam felis. Vestibulum sodales, nunc vitae condimentum commodo, leo mi congue eros, quis rutrum ex turpis non elit. Ut pulvinar ultricies erat, at faucibus mauris fringilla fringilla. Sed finibus risus nec ultrices consequat. Nulla elementum lobortis auctor. Nulla euismod dapibus quam, sit amet ullamcorper sapien sollicitudin sit amet. Pellentesque metus nisl, molestie et mattis ac, rhoncus nec magna.
+
+\emph{et \&}
+
+\end{document}
